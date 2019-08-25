@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>                                      <!--这种尖括号结构中的内容是注释内容，不参与运算。-->
+<motoSystem>                                                                <!--代码行设定了舵机的默认起始位置、最大极限工作角度、最小极限工作角度，舵机角度当量参数（大约是脉冲个数吧）。-->
+
+	<motoSys id="41" name="点头" jdStart="80" jdMax="140" jdMin="30" fScale="11.4" fOffSet="0">
+		<motoImg jd="0" src="img1.jpg"/>
+	</motoSys>                                                          <!--大于140和小于40,硅胶皮脖子折弯明显，会干涉。-->
+
+	<motoSys id="42" name="摇头" jdStart="95" jdMax="150" jdMin="30" fScale="11.4" fOffSet="0">
+		<motoImg jd="0" src="img1.jpg"/> 
+	</motoSys>                                                          <!--超过极限位置硅胶皮牵拉太严重 -->
+	<motoSys id="43" name="摆头" jdStart="85" jdMax="150" jdMin="30" fScale="11.4" fOffSet="0">
+		<motoImg jd="0" src="img1.jpg"/>
+	</motoSys>                                                          <!-- 大于150和小于30的时候，舵臂为无效摆动 -->
+	<motoSys id="44" name="张口" jdStart="55" jdMax="80" jdMin="50" fScale="11.4" fOffSet="0">
+		<motoImg jd="0" src="img1.jpg"/>
+	</motoSys>                                                          <!--轴承中心回转半径14mm -->
+	<motoSys id="45" name="眉左" jdStart="90" jdMax="120" jdMin="40" fScale="11.4" fOffSet="0">
+		<motoImg jd="0" src="img1.jpg"/>
+	</motoSys>                                                          <!--      -->
+	<motoSys id="46" name="眉右" jdStart="90" jdMax="140" jdMin="60" fScale="11.4" fOffSet="0">
+		<motoImg jd="0" src="img1.jpg"/>
+	</motoSys>                                                          <!--      -->
+	<motoSys id="47" name="眨左" jdStart="90" jdMax="150" jdMin="30" fScale="11.4" fOffSet="10">
+		<motoImg jd="0" src="img1.jpg"/>
+	</motoSys>                                                          <!--超过极限角度舵机臂会和桁架干涉，舵机动作最快为0.1s/60°，反向需要响应时间0.06s，极限短时眨眼循环周期0.32s-->
+	<motoSys id="48" name="眨右" jdStart="90" jdMax="150" jdMin="30" fScale="11.4" fOffSet="-10">
+		<motoImg jd="0" src="img1.jpg"/>
+	</motoSys>                                                          <!--超过极限角度舵机臂会和桁架干涉。-->
+	<motoSys id="49" name="眼平" jdStart="90" jdMax="120" jdMin="60" fScale="11.4" fOffSet="0">
+		<motoImg jd="0" src="img1.jpg"/>
+	</motoSys>                                                          <!--调试后舵机极限角度吻合眼球球头枢轴的极限角度 -->
+	<motoSys id="50" name="眼竖" jdStart="100" jdMax="130" jdMin="70" fScale="11.4" fOffSet="0">
+		<motoImg jd="0" src="img1.jpg"/>
+	</motoSys>                                                          <!--调试后舵机极限角度吻合眼球球头枢轴的极限角度（正常值是90°±30°，但存在装配误差。）-->
+	<motoSys id="51" name="笑左" jdStart="45" jdMax="100" jdMin="45" fScale="11.4" fOffSet="0">
+		<motoImg jd="0" src="img1.jpg"/>
+	</motoSys>                                                          <!--      -->
+	<motoSys id="52" name="笑右" jdStart="135" jdMax="135" jdMin="80" fScale="11.4" fOffSet="0">
+		<motoImg jd="0" src="img1.jpg"/>
+	</motoSys>    
+        <motoSys id="36" name="左1" jdStart="95" jdMax="190" jdMin="0" fScale="11.4" fOffSet="15">
+		<motoImg jd="0" src="img1.jpg"/>
+	</motoSys>                                                      <!--      -->
+        <motoSys id="31" name="右1" jdStart="95" jdMax="190" jdMin="0" fScale="11.4" fOffSet="15 ">
+		<motoImg jd="0" src="img1.jpg"/>
+	</motoSys>
+        <motoSys id="37" name="左2" jdStart="96" jdMax="180" jdMin="80" fScale="11.4" fOffSet="0">
+		<motoImg jd="0" src="img1.jpg"/>
+	</motoSys>
+	<motoSys id="32" name="右2" jdStart="90" jdMax="100" jdMin="0" fScale="11.4" fOffSet="0">
+		<motoImg jd="0" src="img1.jpg"/>
+	</motoSys>
+        <motoSys id="38" name="左3" jdStart="146" jdMax="230" jdMin="50" fScale="11.4" fOffSet="0">
+		<motoImg jd="0" src="img1.jpg"/>
+	</motoSys>
+	<motoSys id="33" name="右3" jdStart="113" jdMax="200" jdMin="30" fScale="11.4" fOffSet="0">
+		<motoImg jd="0" src="img1.jpg"/>
+	</motoSys>
+        <motoSys id="39" name="左4" jdStart="98" jdMax="180" jdMin="90" fScale="11.4" fOffSet="0">
+		<motoImg jd="0" src="img1.jpg"/>
+	</motoSys>
+	<motoSys id="34" name="右4" jdStart="82" jdMax="90" jdMin="2" fScale="11.4" fOffSet="0">
+		<motoImg jd="0" src="img1.jpg"/>
+	</motoSys>
+        <motoSys id="40" name="左5" jdStart="90" jdMax="180" jdMin="4" fScale="11.4" fOffSet="0">
+		<motoImg jd="0" src="img1.jpg"/>
+	</motoSys>
+	<motoSys id="35" name="右5" jdStart="90" jdMax="180" jdMin="4" fScale="11.4" fOffSet="0">
+		<motoImg jd="0" src="img1.jpg"/>
+	</motoSys>
+</motoSystem>
